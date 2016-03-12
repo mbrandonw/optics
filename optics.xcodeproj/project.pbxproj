@@ -17,6 +17,13 @@
 		A76128CD1C9482B000EDCCB9 /* FunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128CC1C9482B000EDCCB9 /* FunctionTests.swift */; };
 		A76128CF1C9483CC00EDCCB9 /* LensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128CE1C9483CC00EDCCB9 /* LensTests.swift */; };
 		A76128D11C94883F00EDCCB9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128D01C94883F00EDCCB9 /* Models.swift */; };
+		A76128D51C948F3700EDCCB9 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128D41C948F3700EDCCB9 /* CGRect.swift */; };
+		A76128D71C948F6400EDCCB9 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128D61C948F6400EDCCB9 /* CGSize.swift */; };
+		A76128D91C948F9500EDCCB9 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128D81C948F9500EDCCB9 /* CGPoint.swift */; };
+		A76128DB1C948FBE00EDCCB9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128DA1C948FBE00EDCCB9 /* UIView.swift */; };
+		A76128DD1C948FFC00EDCCB9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128DC1C948FFC00EDCCB9 /* UIButton.swift */; };
+		A76128DF1C94901600EDCCB9 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128DE1C94901600EDCCB9 /* UILabel.swift */; };
+		A76128E11C9490B400EDCCB9 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76128E01C9490B400EDCCB9 /* CALayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,14 @@
 		A76128CC1C9482B000EDCCB9 /* FunctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionTests.swift; sourceTree = "<group>"; };
 		A76128CE1C9483CC00EDCCB9 /* LensTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensTests.swift; sourceTree = "<group>"; };
 		A76128D01C94883F00EDCCB9 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A76128D21C948EB800EDCCB9 /* optics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optics.playground; sourceTree = "<group>"; };
+		A76128D41C948F3700EDCCB9 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		A76128D61C948F6400EDCCB9 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		A76128D81C948F9500EDCCB9 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		A76128DA1C948FBE00EDCCB9 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A76128DC1C948FFC00EDCCB9 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		A76128DE1C94901600EDCCB9 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		A76128E01C9490B400EDCCB9 /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +81,11 @@
 		A76128941C939BD700EDCCB9 = {
 			isa = PBXGroup;
 			children = (
-				A76128B81C939C1100EDCCB9 /* source */,
-				A76128C11C939C1B00EDCCB9 /* tests */,
-				A76128C61C939C2300EDCCB9 /* supporting */,
+				A76128D21C948EB800EDCCB9 /* optics.playground */,
 				A761289F1C939BD700EDCCB9 /* Products */,
+				A76128B81C939C1100EDCCB9 /* source */,
+				A76128C61C939C2300EDCCB9 /* supporting */,
+				A76128C11C939C1B00EDCCB9 /* tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +105,7 @@
 				A76128BA1C939C1100EDCCB9 /* Lens.swift */,
 				A76128BB1C939C1100EDCCB9 /* LensType.swift */,
 				A76128BC1C939C1100EDCCB9 /* Operators.swift */,
+				A76128D31C948F1600EDCCB9 /* UIKit */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -111,6 +128,20 @@
 				A76128C81C939C2300EDCCB9 /* optics.h */,
 			);
 			path = supporting;
+			sourceTree = "<group>";
+		};
+		A76128D31C948F1600EDCCB9 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A76128E01C9490B400EDCCB9 /* CALayer.swift */,
+				A76128D81C948F9500EDCCB9 /* CGPoint.swift */,
+				A76128D41C948F3700EDCCB9 /* CGRect.swift */,
+				A76128D61C948F6400EDCCB9 /* CGSize.swift */,
+				A76128DC1C948FFC00EDCCB9 /* UIButton.swift */,
+				A76128DE1C94901600EDCCB9 /* UILabel.swift */,
+				A76128DA1C948FBE00EDCCB9 /* UIView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +253,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76128DF1C94901600EDCCB9 /* UILabel.swift in Sources */,
+				A76128DB1C948FBE00EDCCB9 /* UIView.swift in Sources */,
 				A76128BF1C939C1100EDCCB9 /* LensType.swift in Sources */,
 				A76128C01C939C1100EDCCB9 /* Operators.swift in Sources */,
+				A76128D51C948F3700EDCCB9 /* CGRect.swift in Sources */,
+				A76128D91C948F9500EDCCB9 /* CGPoint.swift in Sources */,
 				A76128BD1C939C1100EDCCB9 /* Function.swift in Sources */,
+				A76128E11C9490B400EDCCB9 /* CALayer.swift in Sources */,
+				A76128D71C948F6400EDCCB9 /* CGSize.swift in Sources */,
 				A76128BE1C939C1100EDCCB9 /* Lens.swift in Sources */,
+				A76128DD1C948FFC00EDCCB9 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
