@@ -1,18 +1,35 @@
 
 // Function application
-infix operator |> {associativity left precedence 70}
+precedencegroup A {
+  associativity: left
+  higherThan: AdditionPrecedence
+}
+
+infix operator |> : A
 
 // Semigroup operation
-infix operator <> {associativity left precedence 80}
+precedencegroup B {
+  associativity: left
+  higherThan: A
+}
+infix operator <> : B
 
 // Lens set
-infix operator *~ {associativity left precedence 90}
+precedencegroup C {
+  associativity: left
+  higherThan: B
+}
+infix operator *~ : C
 
 // Lens view
-infix operator ^* {associativity left precedence 70}
+infix operator ^* : A
 
 // Lens over
-infix operator %~ {associativity left precedence 90}
+infix operator %~ : C
 
 // Lens composition
-infix operator •  {associativity left precedence 150}
+precedencegroup D {
+  associativity: left
+  higherThan: C
+}
+infix operator • : D

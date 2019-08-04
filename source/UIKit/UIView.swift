@@ -13,7 +13,7 @@ extension UIViewType {
 
   public static var _backgroundColor: Lens<Self, UIColor> {
     return Lens(
-      view: { $0.backgroundColor ?? .clearColor() },
+      view: { $0.backgroundColor ?? .clear },
       set: { $1.backgroundColor = $0; return $1 }
     )
   }

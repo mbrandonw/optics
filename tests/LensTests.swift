@@ -1,9 +1,9 @@
 import XCTest
 @testable import optics
 
-private let square: Int -> Int = { $0 * $0 }
-private let add: Int -> Int -> Int = { lhs in { lhs + $0 } }
-private let incr: Int -> Int = add(1)
+private let square: (Int) -> Int = { $0 * $0 }
+private let add: (Int) -> (Int) -> Int = { lhs in { lhs + $0 } }
+private let incr: (Int) -> Int = add(1)
 
 let user = User(id: 1, location: Location(id: 2, city: City(id: 3)))
 
